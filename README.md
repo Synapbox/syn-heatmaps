@@ -1,17 +1,19 @@
-# syn-heatmaps
-
 ## Elements
 
 - **deployHeatmap.js**
+
 JS that handle all the elements
 
 - **heatmap.js**
+
 [original library] (https://www.patrick-wied.at/static/heatmapjs/)
 
 - **indexTest.html**
+
 Front end web page
 
 - **DataHeatMap.txt**
+
 Example of data (x,y,value)
 ```
 { x : 305, y : 7, value : 1},
@@ -21,6 +23,7 @@ Example of data (x,y,value)
 ```
 
 - **styleHeatMap.css**
+
 The path of the image in the same folder
 ```
   background-image: url("Planograma-.jpg");
