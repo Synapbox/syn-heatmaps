@@ -37,9 +37,21 @@ These information are retrieved by the getHeatMap SP in synapbox_core, the list 
 Four heatmaps, for the content "All-brand-flakes-A.mp4", in two task 3338 and 3346, in four distinct times: 0 to 3 seconds, 0 to 5 secons and 0 to 10 seconds, all resized to a fixed width of 1200 and 720 pixels. This size is determined by the image.
 
 ```
-  CALL getHeatMap("3338,3346","All-brand-flakes-A.mp4",0,3,1200,720);
-  CALL getHeatMap("3338,3346","All-brand-flakes-B.mp4",0,5,1200,720);
-  CALL getHeatMap("3348,3346","All-brand-flakes-D.mp4",0,10,1200,720);
+  CALL getHeatMap(JSON);
+```
+Example of JSON
+```
+  {
+   "tasks":[
+      "3338",
+      "3338"
+   ],
+   "mediaUrl":"https://s3-us-west-2.amazonaws.com/synapbox-share/Images/videos/All-brand-flakes-A.mp4",
+   "beginSecond":"0",
+   "endSecond":"10",
+   "width":"1200",
+   "height":"700"
+  }
 ```
 
 - **styleHeatMap.css**
